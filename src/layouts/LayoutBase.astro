@@ -18,7 +18,7 @@ const { title, classNameMain, disableViewTransitions, description, lang = 'es' }
     <LayoutBaseHead title={title} description={description} />
     {!disableViewTransitions && <ViewTransitions />}
   </head>
-  <body class="w-full min-h-screen flex flex-col bg-neutral-950 text-neutral-200 overflow-x-hidden">
+  <body class="w-full min-h-screen flex flex-col text-foreground bg-background overflow-x-hidden">
     <Header />
     <main class:list={['flex-1 w-full max-w-screen-xl mx-auto', classNameMain]}>
       <slot />

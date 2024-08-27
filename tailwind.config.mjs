@@ -22,8 +22,8 @@ export default {
             ...colors.rose,
           },
           secondary: {
-            DEFAULT: colors.amber[500],
-            ...colors.amber,
+            DEFAULT: colors.lime[500],
+            ...colors.lime,
           },
           danger: {
             DEFAULT: colors.red[500],

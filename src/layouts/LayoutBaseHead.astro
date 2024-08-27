@@ -43,3 +43,21 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, image = '/blog-place
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<style is:global>
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary-400 transition-all;
+  }
+</style>
