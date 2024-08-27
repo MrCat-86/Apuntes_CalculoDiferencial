@@ -1,8 +1,12 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
+
 import { Header, Footer, FormattedDate } from '@/components'
 
 import LayoutBaseHead, { type Props as LayoutBaseHeadProps } from './LayoutBaseHead.astro'
-import { ViewTransitions } from 'astro:transitions'
+
+import '@fontsource-variable/comfortaa'
+import '@/styles/global.css'
 
 interface Props extends LayoutBaseHeadProps {
   classNameMain?: string

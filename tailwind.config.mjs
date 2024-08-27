@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const COLOR_KEYS = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950']
 
@@ -8,6 +9,7 @@ export default {
     extend: {
       colors({ colors }) {
         const background = { DEFAULT: colors.neutral[950], ...colors.neutral }
+        // TODO: To fix
         const backgroundInverted = Object.fromEntries(COLOR_KEYS.map((key, index) => [COLOR_KEYS[COLOR_KEYS.length - 1 - index], background[key]]))
         const foreground = { DEFAULT: background[50], ...backgroundInverted }
 
@@ -43,6 +45,9 @@ export default {
           },
           ...colors,
         }
+      },
+      fontFamily: {
+        sans: ['Comfortaa Variable', ...defaultTheme.fontFamily.sans],
       },
     },
   },
