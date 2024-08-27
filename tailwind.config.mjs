@@ -15,10 +15,7 @@ export default {
 
         return {
           background,
-          foreground: {
-            DEFAULT: colors.neutral[50],
-            ...colors.neutral,
-          },
+          foreground,
           primary: {
             DEFAULT: colors.rose[500],
             ...colors.rose,
