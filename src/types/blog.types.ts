@@ -1,5 +1,7 @@
 export interface IBlogPost {
+  [x: string]: unknown
   title: string
+  tags: string
   description: string
   pubDate: Date
   heroImage?: string
