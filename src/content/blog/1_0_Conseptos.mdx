@@ -7,12 +7,15 @@ heroImage: '/placeholder/blog-2.jpg'
 ---
 
 ## Introducción
-La programación es el proceso de crear un conjunto de instrucciones que 
-le dicen a una computadora cómo realizar una tarea. Estas instrucciones 
+
+La programación es el proceso de crear un conjunto de instrucciones que
+le dicen a una computadora cómo realizar una tarea. Estas instrucciones
 se escriben en un lenguaje de programación que la computadora puede entender.
 
+## Conceptos
+
 - **Algoritmo**:Es un conjunto de instrucciones o pasos ordenados de manera logica que se siguen
-para resolver un problema o realizar una tarea especifica. Los algoritmos deben ser precisos, finitos y definidos.
+  para resolver un problema o realizar una tarea especifica. Los algoritmos deben ser precisos, finitos y definidos.
 
 ```java
 *inicio*
@@ -27,8 +30,9 @@ Escribir en pantalla "La suma de los dos números es: " seguido del valor de sum
 Escribir en pantalla "El valor de la constante PI es: " seguido del valor de PI.
 Fin del algoritmo.
 ```
-- **Programa**:Es una secuencia de instrucciones escritas en un lenguaje de programación que una computadora 
-puede ejecutar. Los programas son la implementacion de algoritmos para resolver problemas o realizar tareas.
+
+- **Programa**:Es una secuencia de instrucciones escritas en un lenguaje de programación que una computadora
+  puede ejecutar. Los programas son la implementacion de algoritmos para resolver problemas o realizar tareas.
 
 ```java
 import java.util.Scanner;
@@ -36,43 +40,50 @@ import java.util.Scanner;
 public class SumaNumeros {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.println("Ingrese el primer número: ");
         int num1 = scanner.nextInt();
-        
+
         System.out.println("Ingrese el segundo número: ");
         int num2 = scanner.nextInt();
-        
+
         int suma = num1 + num2;
         System.out.println("La suma de los dos números es: " + suma);
     }
 }
 ```
-- **Programacion**: Es el proceso de diseñar, escribir, probar y mantener el codigo 
-fuente de programas de computadora.
+
+- **Programacion**: Es el proceso de diseñar, escribir, probar y mantener el codigo
+  fuente de programas de computadora.
 - **Tipo de dato**: Es una clasificacion de los datos que le dice aun programa como debe interpretarse el valor.
+
 ```java
     Enteros (int): Números sin decimales.
     Flotantes (float, double): Números con decimales.
     Caracteres (char): Un solo carácter.
     Cadenas de caracteres (string): Una secuencia de caracteres.
     Booleanos (boolean): Valores de verdadero o falso.
-``` 
+```
 
-- **Constante**:Es un valor que no cambia durante la ejecucion de un programa. Se define una vez y mantiene 
-su valor a lo largo del programa.
+- **Constante**:Es un valor que no cambia durante la ejecucion de un programa. Se define una vez y mantiene
+  su valor a lo largo del programa.
+
 ```java
     Const
         PI <- 3.14159
 ```
+
 - **Variable**:Es un espacio en la memoria que puede contener un valor que puede cambiar durante la ejecucionde un programa.
-Se usa para almacenar y manipular datos.
+  Se usa para almacenar y manipular datos.
+
 ```java
     Var
         num1, num2, suma: Real
 ```
+
 - **Operador**:Es un simbolo o conjunto de simbolos que indican una operacion matematica, logica o relacional
-que debe realizar en uno o mas operadores.
+  que debe realizar en uno o mas operadores.
+
 ```java
 Operadores Aritméticos
 + : Suma
@@ -95,7 +106,8 @@ Operadores de Asignación
 <- : Asignación
 ```
 
-## Ejemplo 
+## Ejemplo
+
 ```java
 Inicio
    Declarar num1, num2, suma como Entero
