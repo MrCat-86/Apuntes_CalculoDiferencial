@@ -1,0 +1,122 @@
+---
+title: 'Estructuras Selectivas: Simple, Doble y Múltiple'
+description: 'Las estructuras selectivas permiten tomar decisiones dentro de un programa.'
+pubDate: '1-10-2024'
+tags: 'Control de flujo, Estructuras selectivas, Java, Condicionales, Programación'
+heroImage: '/placeholder/blog-about.jpg'
+---
+
+## Introducción
+
+Las **estructuras selectivas** son fundamentales en la programación, ya que permiten que un programa tome decisiones según ciertas condiciones. Dependiendo de si una condición es verdadera o falsa, el programa puede ejecutar diferentes bloques de código. Las estructuras selectivas son esenciales para crear programas dinámicos y con capacidad de respuesta ante distintas situaciones.
+
+Existen tres tipos principales de estructuras selectivas: **simple**, **doble** y **múltiple**. A continuación, veremos cómo funciona cada una, con ejemplos en Java.
+
+## Estructura Selectiva Simple
+
+La **estructura selectiva simple** evalúa una condición, y si esta es verdadera, ejecuta un bloque de código. Si la condición es falsa, simplemente no se ejecuta nada. Es la forma más sencilla de tomar decisiones en un programa.
+
+### Ejemplo en Java de Estructura Selectiva Simple
+
+```java
+import java.util.Scanner;
+
+public class EstructuraSelectivaSimple {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario un número
+        System.out.print("Ingrese un número: ");
+        int numero = scanner.nextInt();
+
+        // Verificar si el número es positivo
+        if (numero > 0) {
+            System.out.println("El número es positivo.");
+        }
+
+        scanner.close();
+    }
+}
+```
+
+### Explicación:
+
+En este ejemplo, se solicita al usuario que ingrese un número. La estructura `if` verifica si el número es mayor que 0. Si es verdadero (el número es positivo), se imprime el mensaje "El número es positivo". Si la condición es falsa (el número es 0 o negativo), no se imprime nada.
+
+## Estructura Selectiva Doble
+
+La **estructura selectiva doble** permite ejecutar dos bloques de código, uno si la condición es verdadera y otro si es falsa. Se utiliza cuando se necesita tomar una decisión entre dos opciones.
+
+### Ejemplo en Java de Estructura Selectiva Doble
+
+```java
+import java.util.Scanner;
+
+public class EstructuraSelectivaDoble {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario un número
+        System.out.print("Ingrese un número: ");
+        int numero = scanner.nextInt();
+
+        // Verificar si el número es positivo o negativo
+        if (numero > 0) {
+            System.out.println("El número es positivo.");
+        } else {
+            System.out.println("El número es negativo o cero.");
+        }
+
+        scanner.close();
+    }
+}
+```
+
+### Explicación:
+
+En este caso, si el número es mayor que 0, el programa imprime "El número es positivo". Si la condición no se cumple (es decir, el número es 0 o negativo), se ejecuta el bloque de código en el `else`, y se imprime "El número es negativo o cero".
+
+## Estructura Selectiva Múltiple
+
+La **estructura selectiva múltiple** es una extensión de la estructura doble, pero en lugar de solo dos opciones, permite múltiples opciones. Se usa cuando se tienen más de dos alternativas posibles para evaluar.
+
+En Java, se utiliza la instrucción `else if` para manejar varias condiciones.
+
+### Ejemplo en Java de Estructura Selectiva Múltiple
+
+```java
+import java.util.Scanner;
+
+public class EstructuraSelectivaMultiple {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario un número
+        System.out.print("Ingrese un número entre 1 y 3: ");
+        int numero = scanner.nextInt();
+
+        // Verificar el número y proporcionar una respuesta
+        if (numero == 1) {
+            System.out.println("Seleccionaste el número uno.");
+        } else if (numero == 2) {
+            System.out.println("Seleccionaste el número dos.");
+        } else if (numero == 3) {
+            System.out.println("Seleccionaste el número tres.");
+        } else {
+            System.out.println("Número fuera de rango.");
+        }
+
+        scanner.close();
+    }
+}
+```
+
+### Explicación:
+
+En este ejemplo, el programa evalúa tres posibles opciones: si el número es 1, 2 o 3. Si el número es alguno de estos, se imprime el mensaje correspondiente. Si el número no está entre 1 y 3, se ejecuta el bloque de código `else` y se imprime "Número fuera de rango".
+
+## Conclusión
+
+Las **estructuras selectivas** son esenciales para tomar decisiones dentro de un programa. Las estructuras **simples** son útiles cuando solo se necesita verificar una condición, las **dobles** se usan cuando se necesita elegir entre dos alternativas, y las **múltiples** son necesarias cuando hay más de dos opciones posibles.
+
+Comprender cómo usar correctamente estas estructuras es clave para crear programas dinámicos y eficientes, capaces de responder a diferentes entradas y condiciones.

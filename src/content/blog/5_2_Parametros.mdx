@@ -1,0 +1,121 @@
+---
+title: 'Paso de Parámetros o Argumentos'
+description: 'Cómo pasar parámetros o argumentos a funciones en programación'
+pubDate: '01-10-2024'
+tags: 'Parámetros, Funciones, Programación, Java'
+heroImage: '/placeholder/blog-2.jpg'
+---
+
+## Introducción
+
+En la programación, el **paso de parámetros** es un concepto fundamental que se refiere a la manera en que los valores se pasan a una función o método. Los parámetros permiten que las funciones reciban información del exterior para realizar tareas específicas. Existen diferentes formas de pasar estos valores a las funciones, y entender cómo funciona el paso de parámetros es esencial para escribir programas eficientes y modularizados.
+
+## ¿Qué son los parámetros?
+
+Un **parámetro** es una variable que se utiliza en la declaración de una función o método. Su propósito es recibir valores cuando la función es llamada. Estos valores se utilizan dentro de la función para realizar algún tipo de procesamiento.
+
+Cuando una función es llamada, los valores que se pasan a ella se conocen como **argumentos**. Los argumentos son las instancias o valores reales que se pasan a los parámetros definidos en la función.
+
+### Tipos de paso de parámetros
+
+En la mayoría de los lenguajes de programación, como Java, existen dos tipos principales de paso de parámetros:
+
+1. **Paso por valor**: Se pasa una copia del valor de la variable, lo que significa que cualquier cambio realizado en el parámetro dentro de la función no afecta la variable original.
+2. **Paso por referencia**: Se pasa una referencia a la variable original, lo que significa que cualquier cambio realizado en el parámetro afectará directamente la variable original.
+
+## Paso de parámetros en Java
+
+En Java, los parámetros se pasan por **valor**. Sin embargo, es importante notar que el comportamiento puede parecer diferente según el tipo de datos que se pase (primitivo o referencia).
+
+- **Tipos primitivos** (como `int`, `float`, `char`): Se pasan por valor. Los cambios realizados en la función no afectan a las variables originales.
+- **Objetos** (como `String`, `Arrays`, etc.): Aunque parece que se pasan por referencia, en realidad se pasa una copia de la referencia, lo que significa que los cambios en el objeto dentro de la función pueden modificar el objeto original.
+
+### Sintaxis para pasar parámetros
+
+La sintaxis básica para pasar parámetros en Java se ve de la siguiente manera:
+
+```java
+<tipo de dato> <nombre del parámetro>
+```
+
+Cuando se llama a la función, se pasan los **argumentos** correspondientes a los parámetros en el mismo orden que fueron definidos.
+
+### Ejemplo 1: Paso de parámetros por valor (tipos primitivos)
+
+En este ejemplo, se muestra cómo los parámetros de tipo primitivo se pasan por valor:
+
+```java
+public class PasoPorValor {
+
+    public static void main(String[] args) {
+        int numero = 5;
+        
+        // Llamada a la función con el valor de la variable
+        System.out.println("Valor antes de la función: " + numero);
+        modificarValor(numero);
+        System.out.println("Valor después de la función: " + numero);
+    }
+
+    public static void modificarValor(int numero) {
+        // Cambiar el valor del parámetro dentro de la función
+        numero = 10;
+        System.out.println("Valor dentro de la función: " + numero);
+    }
+}
+```
+
+### Explicación del ejemplo:
+
+1. En la función `modificarValor`, el parámetro `numero` recibe una copia del valor original (5).
+2. Dentro de la función, se cambia el valor de `numero` a 10, pero esto no afecta la variable `numero` de la función principal.
+3. El valor impreso en la función principal después de llamar a `modificarValor` sigue siendo 5.
+
+**Salida esperada:**
+
+```
+Valor antes de la función: 5
+Valor dentro de la función: 10
+Valor después de la función: 5
+```
+
+### Ejemplo 2: Paso de parámetros por valor (objetos)
+
+A continuación, veremos cómo funciona el paso de parámetros cuando se utilizan objetos. Aunque parece que los objetos se pasan por referencia, en realidad se pasa una copia de la referencia del objeto.
+
+```java
+public class PasoPorReferencia {
+
+    public static void main(String[] args) {
+        StringBuilder texto = new StringBuilder("Hola");
+        
+        // Llamada a la función con el objeto
+        System.out.println("Texto antes de la función: " + texto);
+        modificarTexto(texto);
+        System.out.println("Texto después de la función: " + texto);
+    }
+
+    public static void modificarTexto(StringBuilder texto) {
+        // Modificar el contenido del objeto dentro de la función
+        texto.append(", Mundo!");
+        System.out.println("Texto dentro de la función: " + texto);
+    }
+}
+```
+
+### Explicación del ejemplo:
+
+1. En este caso, `texto` es un objeto de tipo `StringBuilder`, que se pasa por valor, pero el valor es la referencia al objeto.
+2. Dentro de la función `modificarTexto`, se modifica el contenido del objeto, lo que afecta al objeto original.
+3. El cambio en el objeto se refleja fuera de la función.
+
+**Salida esperada:**
+
+```
+Texto antes de la función: Hola
+Texto dentro de la función: Hola, Mundo!
+Texto después de la función: Hola, Mundo!
+```
+
+### Conclusión
+
+El paso de parámetros es una técnica esencial en la programación. En Java, los parámetros primitivos se pasan por valor, mientras que los objetos se pasan como copias de la referencia, lo que puede dar la impresión de que se pasan por referencia. Al comprender cómo funcionan los parámetros en las funciones, los programadores pueden manipular correctamente los valores y objetos sin causar efectos no deseados en otras partes del programa.
