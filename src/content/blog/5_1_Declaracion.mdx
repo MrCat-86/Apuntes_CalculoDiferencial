@@ -1,0 +1,99 @@
+---
+title: 'Declaración y uso de módulos'
+description: 'Modularidad en programación'
+pubDate: '01-10-2024'
+tags: 'Modularidad, Funciones, Programación, Java'
+heroImage: '/placeholder/blog-2.jpg'
+---
+
+## Introducción
+
+La **modularidad** es un principio de la programación que consiste en dividir un programa en partes más pequeñas y manejables llamadas **módulos**. Cada módulo es responsable de realizar una tarea específica, lo que permite que el programa sea más fácil de desarrollar, mantener y ampliar. En este contexto, los módulos generalmente se implementan como **funciones** en muchos lenguajes de programación.
+
+## ¿Qué son los módulos?
+
+Un **módulo** es una unidad de código que puede ser reutilizada dentro de un programa. Los módulos pueden ser funciones, procedimientos o bloques de código que se encargan de realizar una operación o tarea específica. Al usar módulos, se puede simplificar el proceso de desarrollo y hacer que el código sea más organizado.
+
+### Características de los módulos
+
+- **Reutilización**: Los módulos pueden ser llamados varias veces en diferentes partes del programa, lo que evita la duplicación de código.
+- **Abstracción**: Los módulos permiten ocultar la complejidad de las operaciones, proporcionando una interfaz clara para su uso.
+- **Mantenimiento**: Al modificar un módulo, no es necesario cambiar otras partes del programa que lo utilicen, lo que facilita el mantenimiento del código.
+
+## Declaración y uso de módulos en Java
+
+En Java, los módulos generalmente se implementan como **funciones** o **métodos**. Una función en Java es un bloque de código que realiza una tarea específica, recibe parámetros y devuelve un resultado.
+
+### Estructura básica de un módulo
+
+Para declarar un módulo en Java, se utiliza la siguiente sintaxis:
+
+```java
+<modificador de acceso> <tipo de dato de retorno> <nombre del módulo>(<parámetros>) {
+    // cuerpo del módulo
+}
+```
+
+- **Modificadores de acceso**: Como `public`, `private` o `protected`, indican la visibilidad del módulo.
+- **Tipo de dato de retorno**: Es el tipo de valor que devuelve el módulo (por ejemplo, `int`, `String`, `void` si no devuelve nada).
+- **Nombre del módulo**: Es el identificador que se le da al módulo.
+- **Parámetros**: Son los valores que el módulo recibe para realizar su operación.
+
+### Ejemplo: Cálculo del Factorial
+
+A continuación, te presentamos un ejemplo simple de cómo declarar y utilizar módulos (funciones) en un programa de Java. Este programa calcula el factorial de un número utilizando un módulo.
+
+```java
+import java.util.Scanner;
+
+public class ExamenFinalCat {
+
+    // Función principal
+    public static void main(String[] args) {
+
+        int numero;
+        Scanner lector = new Scanner(System.in);
+
+        // Solicitar el número al usuario
+        System.out.println("Ingresa un numero: ");
+        numero = lector.nextInt();
+
+        // Llamada al módulo (función) para calcular el factorial
+        System.out.println("El factorial de " + numero + " es: " + factorial(numero));
+
+        // Cerrar el lector
+        lector.close();
+    }
+
+    // Módulo (función) para calcular el factorial
+    public static int factorial(int numero) {
+
+        int resultado = 1;
+
+        // Cálculo del factorial utilizando un bucle
+        for (int i = 1; i <= numero; i++) {
+            resultado *= i; // Multiplicación acumulada
+        }
+
+        return resultado; // Retorna el resultado del factorial
+    }
+}
+```
+
+### Explicación del ejemplo
+
+1. **Scanner**: Se utiliza la clase `Scanner` para leer la entrada del usuario desde la consola.
+2. **Función `factorial`**: Es el **módulo** que recibe un número entero (`numero`), realiza el cálculo del factorial de ese número y retorna el resultado.
+3. **Uso de Módulo**: En la función principal (`main`), el módulo `factorial` es invocado para calcular el factorial del número ingresado por el usuario y mostrarlo en la consola.
+
+### Beneficios de la Modularidad
+
+La modularidad ofrece varios beneficios, entre los cuales destacan:
+
+- **Organización del código**: Los módulos permiten que el código esté organizado en partes lógicas, lo que facilita su comprensión.
+- **Facilidad de depuración**: Al separar el código en módulos, es más fácil identificar y corregir errores, ya que cada módulo realiza una tarea específica.
+- **Reutilización del código**: Los módulos pueden ser reutilizados en otros programas o en otras partes del mismo programa sin necesidad de reescribir código.
+
+## Conclusión
+
+La **modularidad** es un principio clave en el diseño de programas. Al dividir un programa en módulos, es posible hacer que el código sea más limpio, eficiente y fácil de mantener. En Java, esto se logra mediante el uso de funciones que encapsulan tareas específicas. Al implementar módulos en tus programas, no solo mejorarás la calidad del código, sino que también facilitarás el proceso de mantenimiento y actualización a lo largo del tiempo.
