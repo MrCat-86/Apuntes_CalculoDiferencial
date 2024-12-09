@@ -1,0 +1,111 @@
+---
+title: 'Cálculo de aproximaciones usando diferenciales'
+description: 'Uso de los diferenciales para calcular aproximaciones en funciones en cálculo.'
+pubDate: '10-08-2024'
+tags: 'aproximación, diferenciales, cálculo, cambio'
+heroImage: '/placeholder/Unidad4.jpg'
+---
+
+## Introducción
+
+El cálculo de **aproximaciones usando diferenciales** es una técnica útil para estimar el valor de una función en un punto cercano, utilizando la derivada de la función y un pequeño cambio en la variable independiente. Este proceso es especialmente importante cuando no es posible calcular el valor exacto de una función debido a su complejidad, pero se necesita una aproximación cercana.
+
+---
+
+## 1. ¿Qué es la aproximación usando diferenciales?
+
+La aproximación usando diferenciales se basa en el concepto de **diferencial**. En términos simples, consiste en usar el valor de la derivada de la función en un punto para estimar cómo cambia la función con un pequeño cambio en su entrada. Este tipo de aproximación es muy útil cuando se quiere calcular el valor de una función en un punto cercano a otro donde sí se conoce su valor.
+
+La fórmula básica para la aproximación es:
+
+\[
+\Delta y \approx f'(x) \cdot \Delta x
+\]
+
+Donde:
+- **Δy** es el cambio aproximado en el valor de la función.
+- **f'(x)** es la derivada de la función en el punto **x**.
+- **Δx** es el cambio pequeño en **x**.
+
+---
+
+## 2. Ejemplo de cálculo de aproximaciones usando diferenciales
+
+Supongamos que queremos estimar el valor de la función **f(x) = x²** en **x = 2.1**, sabiendo que el valor de la función en **x = 2** es 4. Para hacerlo, seguimos los siguientes pasos:
+
+1. Calculamos la derivada de la función:
+   
+   \[
+   f'(x) = 2x
+   \]
+
+2. Evaluamos la derivada en **x = 2**:
+
+   \[
+   f'(2) = 2(2) = 4
+   \]
+
+3. Calculamos el cambio en **x**: **Δx = 2.1 - 2 = 0.1**.
+
+4. Aplicamos la fórmula para la aproximación:
+
+   \[
+   \Delta y \approx f'(2) \cdot \Delta x = 4 \cdot 0.1 = 0.4
+   \]
+
+Por lo tanto, el valor estimado de la función en **x = 2.1** es:
+
+\[
+f(2.1) \approx f(2) + \Delta y = 4 + 0.4 = 4.4
+\]
+
+---
+
+## 3. Ejercicio
+
+Dada la función **f(x) = x³** y el punto **x = 3**, usa el diferencial para estimar el valor de la función en **x = 3.05**.
+
+1. Calcula la derivada de la función **f(x)**.
+2. Encuentra el valor de **f'(3)**.
+3. Calcula el cambio en **x**: **Δx = 3.05 - 3**.
+4. Aplica la fórmula para calcular **Δy** y estima el valor de **f(3.05)**.
+
+---
+
+## 4. Respuestas
+
+1. La derivada de la función **f(x) = x³** es:
+
+\[
+f'(x) = 3x²
+\]
+
+2. Evaluamos la derivada en **x = 3**:
+
+\[
+f'(3) = 3(3)² = 3(9) = 27
+\]
+
+3. El cambio en **x** es:
+
+\[
+\Delta x = 3.05 - 3 = 0.05
+\]
+
+4. Aplicamos la fórmula para el diferencial:
+
+\[
+\Delta y \approx 27 \cdot 0.05 = 1.35
+\]
+
+Por lo tanto, el valor estimado de **f(3.05)** es:
+
+\[
+f(3.05) \approx f(3) + \Delta y = 27 + 1.35 = 28.35
+\]
+
+---
+
+## 5. Conclusión
+
+El cálculo de aproximaciones usando diferenciales es una herramienta poderosa para estimar el valor de una función cuando no se puede calcular directamente. Al conocer la derivada de una función en un punto y el pequeño cambio en la variable independiente, podemos obtener una aproximación bastante precisa del valor de la función en puntos cercanos. Esta técnica es ampliamente utilizada en diversos campos como la física, la ingeniería y la economía para resolver problemas prácticos donde se necesitan soluciones rápidas pero confiables sin requerir cálculos complejos. Además, nos permite entender cómo pequeños cambios en las variables afectan el comportamiento de las funciones de una manera intuitiva y accesible.

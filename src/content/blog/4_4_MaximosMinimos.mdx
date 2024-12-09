@@ -1,0 +1,116 @@
+---
+title: 'Criterio de la Primera Derivada para Máximos y Mínimos'
+description: 'Estudio sobre el uso del criterio de la primera derivada para determinar los puntos máximos y mínimos de una función.'
+pubDate: '11-08-2024'
+tags: 'Derivada, máximos, mínimos, criterio primera derivada'
+heroImage: '/placeholder/Unidad4.jpg'
+---
+
+## Introducción
+
+El **criterio de la primera derivada** es una herramienta fundamental en el análisis de funciones para encontrar sus valores máximos y mínimos. Este criterio utiliza el comportamiento de la derivada de una función para determinar la naturaleza de sus puntos críticos. A través de este criterio, podemos clasificar los puntos críticos como máximos locales, mínimos locales o puntos de inflexión.
+
+---
+
+## 1. ¿Qué es el Criterio de la Primera Derivada?
+
+El **criterio de la primera derivada** establece que:
+
+- Si la derivada de una función **f'(x)** cambia de positiva a negativa en un punto crítico **x = c**, entonces **f(c)** es un **máximo local**.
+- Si la derivada de una función **f'(x)** cambia de negativa a positiva en un punto crítico **x = c**, entonces **f(c)** es un **mínimo local**.
+- Si la derivada no cambia de signo en torno al punto crítico, no podemos determinar si el punto es un máximo o un mínimo solo con la primera derivada.
+
+Este criterio es útil porque no requiere calcular la segunda derivada, lo que simplifica el proceso cuando solo estamos interesados en la dirección del cambio de la pendiente de la función.
+
+---
+
+## 2. Aplicación del Criterio de la Primera Derivada
+
+### Paso 1: Encontrar la derivada de la función
+
+Lo primero que necesitamos hacer es encontrar la derivada de la función **f(x)**.
+
+### Paso 2: Igualar la derivada a cero
+
+Luego, igualamos la derivada **f'(x)** a cero y resolvemos para **x**. Los valores que obtenemos son los **puntos críticos**.
+
+### Paso 3: Analizar los intervalos alrededor de los puntos críticos
+
+Para determinar la naturaleza del punto crítico, se debe elegir un valor de **x** en los intervalos a la izquierda y a la derecha de cada punto crítico. Evaluamos la derivada en esos puntos.
+
+- Si la derivada es positiva en el intervalo a la izquierda y negativa en el intervalo a la derecha del punto crítico, entonces el punto es un **máximo local**.
+- Si la derivada es negativa en el intervalo a la izquierda y positiva en el intervalo a la derecha del punto crítico, entonces el punto es un **mínimo local**.
+
+---
+
+## 3. Ejemplo
+
+Consideremos la función:
+
+- **f(x) = x³ - 6x² + 9x**.
+
+Primero, encontramos la derivada:
+
+- **f'(x) = 3x² - 12x + 9**.
+
+Igualamos la derivada a cero:
+
+- **3x² - 12x + 9 = 0**.
+- Resolviendo, obtenemos **x = 1** y **x = 3** como los puntos críticos.
+
+Ahora, analizamos los intervalos alrededor de estos puntos críticos. Tomamos valores de **x** a la izquierda y derecha de **x = 1** y **x = 3**:
+
+- Para **x = 1**, probamos con **x = 0.5** (a la izquierda) y **x = 1.5** (a la derecha).
+  - **f'(0.5) = 3(0.5)² - 12(0.5) + 9 = 3.75** (positivo).
+  - **f'(1.5) = 3(1.5)² - 12(1.5) + 9 = -3.75** (negativo).
+  - Como la derivada cambia de positiva a negativa, **x = 1** es un **máximo local**.
+
+- Para **x = 3**, probamos con **x = 2.5** (a la izquierda) y **x = 3.5** (a la derecha).
+  - **f'(2.5) = 3(2.5)² - 12(2.5) + 9 = -3.75** (negativo).
+  - **f'(3.5) = 3(3.5)² - 12(3.5) + 9 = 3.75** (positivo).
+  - Como la derivada cambia de negativa a positiva, **x = 3** es un **mínimo local**.
+
+---
+
+## 4. Resumen
+
+El **criterio de la primera derivada** es un método sencillo y efectivo para determinar los valores extremos de una función. Nos ayuda a clasificar los puntos críticos como máximos o mínimos, simplemente analizando los cambios en el signo de la derivada.
+
+- Si la derivada cambia de positiva a negativa, el punto es un **máximo local**.
+- Si la derivada cambia de negativa a positiva, el punto es un **mínimo local**.
+
+---
+
+## 5. Ejercicios
+
+1. Encuentra los máximos y mínimos de la función **f(x) = x⁴ - 4x³ + 6x²** utilizando el criterio de la primera derivada.
+2. Determina si la función **f(x) = x³ - 3x + 2** tiene un máximo o mínimo en **x = 1**.
+
+---
+
+## 6. Respuestas
+
+### Respuesta al ejercicio 1:
+
+- La derivada de **f(x) = x⁴ - 4x³ + 6x²** es **f'(x) = 4x³ - 12x² + 12x**.
+- Igualamos la derivada a cero: **4x(x² - 3x + 3) = 0**, lo que da **x = 0** como punto crítico.
+- Evaluamos la derivada en los intervalos a la izquierda y derecha de **x = 0**:
+  - Para **x = -0.5**, **f'(-0.5) = 2.25** (positivo).
+  - Para **x = 0.5**, **f'(0.5) = -2.25** (negativo).
+  - Como la derivada cambia de positiva a negativa, **x = 0** es un **máximo local**.
+
+### Respuesta al ejercicio 2:
+
+- La derivada de **f(x) = x³ - 3x + 2** es **f'(x) = 3x² - 3**.
+- Evaluamos la derivada en **x = 1**:
+  - **f'(1) = 3(1)² - 3 = 0**.
+  - Para **x = 0.5** y **x = 1.5**, evaluamos la derivada:
+    - **f'(0.5) = -0.75** (negativo).
+    - **f'(1.5) = 3.75** (positivo).
+  - Como la derivada cambia de negativa a positiva, **x = 1** es un **mínimo local**.
+
+---
+
+## Conclusión
+
+El **criterio de la primera derivada** es una forma sencilla de clasificar los puntos críticos de una función, permitiéndonos determinar si esos puntos corresponden a un máximo o un mínimo local. Este criterio es una herramienta clave en el análisis de funciones y se aplica en una amplia variedad de problemas matemáticos y prácticos.
