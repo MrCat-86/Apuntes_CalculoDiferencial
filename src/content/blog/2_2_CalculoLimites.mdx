@@ -1,0 +1,167 @@
+---
+title: 'Cálculo de Límites por Métodos Algebraicos'
+description: 'Métodos para calcular límites de funciones mediante técnicas algebraicas simples.'
+pubDate: '11-08-2024'
+tags: 'Límites, Cálculo, Matemáticas Básicas'
+heroImage: '/placeholder/Unidad2.jpg'
+---
+
+## Introducción
+
+En este subtema aprenderemos cómo calcular los **límites** de funciones usando métodos algebraicos. A veces, al intentar calcular un límite, podemos encontrarnos con expresiones complicadas que no nos permiten encontrar el valor directamente. Sin embargo, existen técnicas algebraicas que nos permiten simplificar estas expresiones y hallar el límite de manera más sencilla.
+
+---
+
+## 1. Factorización
+
+Uno de los métodos más comunes para calcular límites es **factorizar** la expresión. Si una función tiene una forma indeterminada como **0/0** cuando intentamos calcular el límite, podemos intentar factorizar el numerador y el denominador para simplificar la fracción y eliminar el problema de la indeterminación.
+
+### Ejemplo de factorizar:
+
+Supongamos que tenemos la siguiente función:
+
+**f(x) = (x² - 1) / (x - 1)**
+
+Si intentamos calcular el límite cuando **x se acerca a 1**, obtendremos **0/0**, lo que es indeterminado. Sin embargo, podemos factorizar el numerador:
+
+**x² - 1** se puede factorizar como **(x - 1)(x + 1)**.
+
+Entonces, la función se convierte en:
+
+**f(x) = ((x - 1)(x + 1)) / (x - 1)**
+
+Ahora, podemos cancelar el término **(x - 1)** del numerador y el denominador, y lo que nos queda es:
+
+**f(x) = x + 1**
+
+Ahora sí, podemos sustituir directamente el valor **x = 1** en la nueva función:
+
+**f(1) = 1 + 1 = 2**
+
+Por lo tanto, el límite de la función cuando **x se acerca a 1** es igual a **2**.
+
+---
+
+## 2. Racionalización
+
+Otro método útil es **racionalizar** la expresión. Esto se usa principalmente cuando el límite involucra raíces cuadradas. Si encontramos una fracción que tiene una raíz cuadrada en el numerador o denominador, podemos multiplicar y dividir por una expresión que elimine la raíz.
+
+### Ejemplo de racionalización:
+
+Supongamos que tenemos la siguiente función:
+
+**f(x) = (√x - 2) / (x - 4)**
+
+Si intentamos calcular el límite cuando **x se acerca a 4**, nos encontramos con la forma **0/0**, lo que significa que necesitamos simplificar la expresión. Para ello, multiplicamos y dividimos por el conjugado del numerador, que en este caso sería **(√x + 2)**.
+
+Multiplicamos:
+
+**(√x - 2) * (√x + 2) = x - 4**
+
+Ahora la función se convierte en:
+
+**f(x) = (x - 4) / (x - 4)(x - 4)**
+
+Ahora, podemos cancelar el término **(x - 4)** y obtener:
+
+**f(x) = 1 / (√x + 2)**
+
+Ahora, sustituimos **x = 4** en la nueva expresión:
+
+**f(4) = 1 / (√4 + 2) = 1 / (2 + 2) = 1 / 4**
+
+Por lo tanto, el límite de la función cuando **x se acerca a 4** es **1/4**.
+
+---
+
+## 3. Simplificación directa
+
+En algunos casos, simplemente podemos **simplificar directamente** la función, especialmente si es una fracción que no tiene términos que se anulan entre sí, pero que aún podemos simplificar.
+
+### Ejemplo de simplificación directa:
+
+Supongamos que tenemos la función:
+
+**f(x) = (3x + 4) / (x + 1)**
+
+Si queremos calcular el límite cuando **x se acerca a -1**, podemos sustituir directamente el valor **x = -1** en la función:
+
+**f(-1) = (3(-1) + 4) / (-1 + 1) = (-3 + 4) / (0) = 1 / 0**
+
+En este caso, obtenemos una división por cero, lo que indica que el límite **no existe**. Esto se conoce como un **límite infinito** o que la función tiene una discontinuidad en ese punto.
+
+---
+
+## 4. Resumen de métodos
+
+Los métodos más comunes para calcular límites de funciones son:
+
+1. **Factorización**: Si encontramos una indeterminación **0/0**, podemos intentar factorizar el numerador y el denominador para simplificar la expresión.
+2. **Racionalización**: Si tenemos una raíz cuadrada, multiplicamos y dividimos por el conjugado para eliminar la raíz.
+3. **Simplificación directa**: En algunos casos, podemos simplificar directamente la función y sustituir el valor en el límite.
+
+---
+
+## 5. Ejercicios prácticos
+
+### Ejercicio 1: Factorización
+
+Encuentra el límite de la función **f(x) = (x² - 4) / (x - 2)** cuando **x se acerca a 2**.
+
+### Ejercicio 2: Racionalización
+
+Encuentra el límite de la función **f(x) = (√(x + 4) - 2) / (x - 0)** cuando **x se acerca a 0**.
+
+---
+
+## 6. Respuestas
+
+### Respuesta al ejercicio 1:
+
+La función **f(x) = (x² - 4) / (x - 2)** tiene una indeterminación **0/0** cuando **x se acerca a 2**, pero podemos factorizar el numerador:
+
+**x² - 4** se factoriza como **(x - 2)(x + 2)**.
+
+La función se convierte en:
+
+**f(x) = (x - 2)(x + 2) / (x - 2)**
+
+Cancelamos el término **(x - 2)** y obtenemos:
+
+**f(x) = x + 2**
+
+Sustituimos **x = 2**:
+
+**f(2) = 2 + 2 = 4**
+
+Por lo tanto, el límite es **4**.
+
+### Respuesta al ejercicio 2:
+
+La función **f(x) = (√(x + 4) - 2) / (x - 0)** tiene una indeterminación **0/0** cuando **x se acerca a 0**, así que multiplicamos por el conjugado del numerador:
+
+Multiplicamos y dividimos por **(√(x + 4) + 2)**:
+
+**f(x) = (√(x + 4) - 2)(√(x + 4) + 2) / (x)(√(x + 4) + 2)**
+
+El numerador se convierte en **(x + 4) - 4 = x**.
+
+La función se simplifica a:
+
+**f(x) = x / (x(√(x + 4) + 2))**
+
+Cancelamos **x** y obtenemos:
+
+**f(x) = 1 / (√(x + 4) + 2)**
+
+Sustituimos **x = 0**:
+
+**f(0) = 1 / (√4 + 2) = 1 / (2 + 2) = 1 / 4**
+
+Por lo tanto, el límite es **1/4**.
+
+---
+
+## 7. Conclusión
+
+Calcular límites usando métodos algebraicos es una habilidad fundamental en el cálculo. Saber cuándo y cómo aplicar la **factorización**, la **racionalización** y la **simplificación directa** nos permite encontrar los límites de funciones que no son inmediatamente evidentes. Practicar estos métodos nos ayudará a resolver muchos problemas de cálculo de manera efectiva.

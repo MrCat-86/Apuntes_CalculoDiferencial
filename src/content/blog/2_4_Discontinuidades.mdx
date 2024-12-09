@@ -1,0 +1,106 @@
+---
+title: 'Tipos de discontinuidades'
+description: 'Explicación sobre los diferentes tipos de discontinuidades que puede presentar una función.'
+pubDate: '11-08-2024'
+tags: 'Límites, Continuidad, Discontinuidades'
+heroImage: '/placeholder/Unidad2.jpg'
+---
+
+## Introducción
+
+En este subtema vamos a estudiar los diferentes tipos de **discontinuidades** que una función puede tener. Una discontinuidad ocurre cuando una función no es continua en un punto o en un intervalo. Es decir, la función tiene "saltos" o "agujeros". Conocer los tipos de discontinuidades nos ayudará a identificar comportamientos irregulares en funciones y a comprender cómo afectan al análisis matemático.
+
+---
+
+## 1. Discontinuidad de salto
+
+Una **discontinuidad de salto** ocurre cuando el valor de la función salta de un valor a otro en un punto, es decir, el límite de la función cuando se acerca al punto desde la izquierda no es igual al límite cuando se acerca desde la derecha. 
+
+Por ejemplo, si tenemos una función que toma un valor **A** cuando **x** se acerca al punto desde la izquierda, y un valor **B** cuando **x** se acerca al punto desde la derecha, entonces hay una discontinuidad de salto en ese punto. Esto ocurre en funciones que tienen un cambio abrupto en su valor en un punto.
+
+### Ejemplo de discontinuidad de salto:
+
+Consideremos la función **f(x)** definida de la siguiente manera:
+
+- Si **x < 2**, entonces **f(x) = 3**.
+- Si **x ≥ 2**, entonces **f(x) = 5**.
+
+En este caso, cuando nos acercamos a **x = 2** desde la izquierda, el valor de la función es **3**, y cuando nos acercamos desde la derecha, el valor es **5**. Como los valores no coinciden, hay una discontinuidad de salto en **x = 2**.
+
+---
+
+## 2. Discontinuidad removible
+
+Una **discontinuidad removible** se presenta cuando el límite de la función existe en un punto, pero el valor de la función en ese punto es diferente o no está definido. En otras palabras, el gráfico de la función tiene un "agujero" en el punto, pero podríamos "rellenar" el agujero asignando el valor correcto en ese punto.
+
+### Ejemplo de discontinuidad removible:
+
+Consideremos la función **f(x)** definida de la siguiente manera:
+
+- **f(x) = (x² - 1) / (x - 1)**, para **x ≠ 1**.
+- **f(x) = 0**, para **x = 1**.
+
+Si intentamos calcular el límite de **f(x)** cuando **x** se acerca a 1, el valor de la función se acerca a **2**. Sin embargo, la función no está definida en **x = 1** con el valor correcto, sino que se ha asignado el valor **0**. Esto forma una discontinuidad removible, porque si asignáramos **f(1) = 2**, la discontinuidad desaparecería.
+
+---
+
+## 3. Discontinuidad infinita
+
+Una **discontinuidad infinita** ocurre cuando la función tiende al infinito (positivo o negativo) cuando se acerca a un punto. Esto significa que, al acercarse al punto, los valores de la función se disparan y no se estabilizan en ningún valor finito.
+
+### Ejemplo de discontinuidad infinita:
+
+Consideremos la función **f(x) = 1 / (x - 3)**. En este caso, cuando nos acercamos a **x = 3**, la función se dispara hacia el infinito. Si nos acercamos a **x = 3** desde la izquierda, la función tiende a **-∞**, y si nos acercamos desde la derecha, la función tiende a **∞**. Esto crea una discontinuidad infinita en **x = 3**.
+
+---
+
+## 4. Discontinuidad oscilante
+
+Una **discontinuidad oscilante** ocurre cuando, al acercarse a un punto, la función no tiende a un valor específico, sino que oscila entre varios valores, sin estabilizarse en ningún valor en particular.
+
+### Ejemplo de discontinuidad oscilante:
+
+Un ejemplo típico de una discontinuidad oscilante es la función **f(x) = sen(1 / x)** cuando **x** se acerca a **0**. Al acercarse a **x = 0**, los valores de la función oscilan rápidamente entre **-1** y **1**. No hay un límite bien definido en ese punto, ya que la función no se estabiliza en ningún valor.
+
+---
+
+## Resumen de los tipos de discontinuidades
+
+- **Discontinuidad de salto**: Ocurre cuando los límites de la función desde la izquierda y desde la derecha en un punto son diferentes.
+- **Discontinuidad removible**: Ocurre cuando el límite existe, pero la función no está definida o tiene un valor incorrecto en el punto.
+- **Discontinuidad infinita**: Ocurre cuando los valores de la función tienden al infinito en un punto.
+- **Discontinuidad oscilante**: Ocurre cuando la función oscila entre varios valores sin estabilizarse.
+
+---
+
+## 5. Ejercicios prácticos
+
+### Ejercicio 1: Identificar el tipo de discontinuidad
+
+Dada la función:
+
+- **f(x) = 1 / (x - 2)**, ¿qué tipo de discontinuidad tiene en **x = 2**?
+
+### Ejercicio 2: Discontinuidad removible
+
+Considera la función:
+
+- **f(x) = (x² - 4) / (x - 2)**. ¿La función tiene una discontinuidad removible en **x = 2**?
+
+---
+
+## 6. Respuestas
+
+### Respuesta al ejercicio 1:
+
+La función **f(x) = 1 / (x - 2)** tiene una **discontinuidad infinita** en **x = 2**, ya que cuando nos acercamos a **x = 2**, los valores de la función se disparan hacia el infinito (positivo o negativo), dependiendo de si nos acercamos desde la izquierda o desde la derecha.
+
+### Respuesta al ejercicio 2:
+
+La función **f(x) = (x² - 4) / (x - 2)** tiene una **discontinuidad removible** en **x = 2**, ya que podemos simplificar la expresión a **f(x) = (x + 2)** cuando **x ≠ 2**. El límite cuando **x** se acerca a 2 es **4**, por lo que si definimos **f(2) = 4**, la discontinuidad desaparecería.
+
+---
+
+## 7. Conclusión
+
+Comprender los diferentes tipos de discontinuidades es esencial para el análisis de funciones. Saber identificar cuándo una función tiene una discontinuidad de salto, removible, infinita o oscilante nos permite entender mejor su comportamiento y trabajar de manera más efectiva con ellas en problemas de cálculo y otros campos de las matemáticas.
