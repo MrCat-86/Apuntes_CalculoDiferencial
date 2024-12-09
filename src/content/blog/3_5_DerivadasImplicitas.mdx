@@ -1,0 +1,130 @@
+---
+title: 'Derivada de funciones implícitas'
+description: 'Cálculo de derivadas en funciones implícitas mediante la diferenciación implícita.'
+pubDate: '11-08-2024'
+tags: 'Derivadas, Funciones implícitas, Diferenciación implícita'
+heroImage: '/placeholder/Unidad3.png'
+---
+
+## Introducción
+
+En ocasiones, las funciones no están expresadas explícitamente en términos de una variable independiente (como **y = f(x)**), sino que están implícitas en una ecuación que involucra ambas variables. En estos casos, para encontrar la derivada de **y** con respecto a **x**, utilizamos un método llamado **diferenciación implícita**. Este proceso nos permite calcular la derivada sin tener que resolver la ecuación para **y** explícitamente.
+
+---
+
+## 1. Diferenciación implícita
+
+La idea detrás de la diferenciación implícita es tratar ambas variables, **x** y **y**, como funciones de una misma variable (en este caso, **x**) y luego aplicar las reglas de derivación. Cuando derivamos con respecto a **x**, debemos recordar que **y** es una función de **x**, por lo que su derivada será **dy/dx**.
+
+### Pasos básicos:
+
+1. **Diferenciamos ambos lados de la ecuación con respecto a **x**.**
+2. **Aplicamos la regla de la cadena cuando derivamos términos con **y**.**
+3. **Resolvemos para **dy/dx**.**
+
+---
+
+## 2. Ejemplo básico
+
+Considera la ecuación implícita:
+
+- **x^2 + y^2 = 25**
+
+Queremos encontrar la derivada de **y** con respecto a **x**. Para hacerlo, seguimos estos pasos:
+
+1. Diferenciamos ambos lados de la ecuación con respecto a **x**:
+
+   - **d/dx(x^2 + y^2) = d/dx(25)**
+
+2. Derivamos cada término:
+
+   - La derivada de **x^2** es **2x**.
+   - La derivada de **y^2** es **2y * (dy/dx)** (usamos la regla de la cadena aquí, porque **y** es una función de **x**).
+   - La derivada de **25** es **0** (es una constante).
+
+   Entonces, obtenemos la ecuación:
+
+   - **2x + 2y * (dy/dx) = 0**
+
+3. Resolvemos para **dy/dx**:
+
+   - **dy/dx = -2x / 2y**
+
+   Simplificando:
+
+   - **dy/dx = -x / y**
+
+Este es el valor de la derivada de **y** con respecto a **x** en la ecuación implícita.
+
+---
+
+## 3. Ejemplo avanzado
+
+Considera la ecuación implícita más compleja:
+
+- **x^3 + y^3 = 6xy**
+
+Queremos encontrar la derivada de **y** con respecto a **x**. Siguiendo los pasos:
+
+1. Diferenciamos ambos lados con respecto a **x**:
+
+   - **d/dx(x^3 + y^3) = d/dx(6xy)**
+
+2. Derivamos cada término:
+
+   - La derivada de **x^3** es **3x^2**.
+   - La derivada de **y^3** es **3y^2 * (dy/dx)**.
+   - La derivada de **6xy** requiere la regla del producto: **6 * (x * dy/dx + y)**.
+
+   Entonces, obtenemos la ecuación:
+
+   - **3x^2 + 3y^2 * (dy/dx) = 6 * (x * (dy/dx) + y)**
+
+3. Resolvemos para **dy/dx**:
+
+   - **3x^2 + 3y^2 * (dy/dx) = 6x * (dy/dx) + 6y**
+   - Agrupamos los términos con **dy/dx** en un lado:
+
+     - **3y^2 * (dy/dx) - 6x * (dy/dx) = 6y - 3x^2**
+
+   - Factorizamos **dy/dx**:
+
+     - **(dy/dx) * (3y^2 - 6x) = 6y - 3x^2**
+
+   - Finalmente, despejamos **dy/dx**:
+
+     - **dy/dx = (6y - 3x^2) / (3y^2 - 6x)**
+
+---
+
+## 4. Ejercicios prácticos
+
+### Ejercicio 1: Derivada implícita de una circunferencia
+
+Dada la ecuación **x^2 + y^2 = 16**, encuentra la derivada de **y** con respecto a **x**.
+
+### Ejercicio 2: Derivada implícita de una curva
+
+Dada la ecuación **x^2y + y^3 = 5x**, encuentra la derivada de **y** con respecto a **x**.
+
+---
+
+## 5. Respuestas
+
+### Respuesta al ejercicio 1:
+
+Para la ecuación **x^2 + y^2 = 16**, la derivada es:
+
+- **dy/dx = -x / y**
+
+### Respuesta al ejercicio 2:
+
+Para la ecuación **x^2y + y^3 = 5x**, la derivada es:
+
+- **dy/dx = (5 - 2xy) / (x^2 + 3y^2)**
+
+---
+
+## Conclusión
+
+La derivación implícita es una herramienta poderosa para encontrar derivadas de funciones que no están expresadas explícitamente. Este método nos permite manejar ecuaciones más complejas y obtener la derivada de **y** con respecto a **x** sin tener que resolver para **y** en términos de **x**. Practicar con ejemplos es fundamental para dominar esta técnica.

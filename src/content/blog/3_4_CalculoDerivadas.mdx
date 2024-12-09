@@ -1,0 +1,134 @@
+---
+title: 'Cálculo de derivadas'
+description: 'Métodos para calcular derivadas de funciones comunes, incluyendo reglas de derivación.'
+pubDate: '11-08-2024'
+tags: 'Derivadas, Cálculo, Reglas de derivación'
+heroImage: '/placeholder/Unidad3.png'
+---
+
+## Introducción
+
+El cálculo de derivadas es una parte fundamental del cálculo diferencial. La derivada nos permite conocer cómo cambia una función en un punto dado, es decir, la tasa de cambio instantánea de la función. En este subtema, vamos a revisar los métodos más comunes para calcular derivadas de funciones, incluyendo las reglas básicas de derivación.
+
+---
+
+## 1. Derivada de una constante
+
+Si tenemos una función constante, como **f(x) = c**, donde **c** es un número constante, la derivada de esa función siempre será **0**. Esto se debe a que las constantes no cambian, por lo que su tasa de cambio es cero.
+
+- **f(x) = c** → **f'(x) = 0**
+
+---
+
+## 2. Derivada de una función potencia
+
+Para una función de la forma **f(x) = x^n**, donde **n** es un número real, la derivada se calcula utilizando la regla de potencia. La regla de potencia dice que la derivada de **x^n** es igual a **n** multiplicado por **x^(n-1)**.
+
+- **f(x) = x^n** → **f'(x) = n * x^(n-1)**
+
+Ejemplo:
+
+- **f(x) = x^3** → **f'(x) = 3 * x^2**
+
+---
+
+## 3. Derivada de la suma o resta de funciones
+
+Si tenemos dos funciones, **f(x)** y **g(x)**, cuya derivada deseamos calcular, y estas están sumando o restando, la derivada de la suma o resta será simplemente la suma o resta de las derivadas de las funciones individuales.
+
+- **f(x) = f(x) + g(x)** → **f'(x) = f'(x) + g'(x)**
+- **f(x) = f(x) - g(x)** → **f'(x) = f'(x) - g'(x)**
+
+Ejemplo:
+
+- Si **f(x) = x^2 + 5x**, entonces **f'(x) = 2x + 5**.
+
+---
+
+## 4. Derivada de la multiplicación de funciones (Regla del producto)
+
+Cuando tenemos el producto de dos funciones, **f(x) * g(x)**, la derivada se calcula utilizando la **regla del producto**. Esta regla dice que la derivada de un producto es igual al primer término multiplicado por la derivada del segundo término, más el segundo término multiplicado por la derivada del primer término.
+
+- **f(x) = f(x) * g(x)** → **f'(x) = f'(x) * g(x) + f(x) * g'(x)**
+
+Ejemplo:
+
+- Si **f(x) = x * (x + 1)**, entonces **f'(x) = (1) * (x + 1) + x * (1) = x + 1 + x = 2x + 1**.
+
+---
+
+## 5. Derivada de la división de funciones (Regla del cociente)
+
+Si tenemos la división de dos funciones, **f(x) / g(x)**, la derivada se calcula utilizando la **regla del cociente**. Esta regla dice que la derivada de un cociente es igual al denominador multiplicado por la derivada del numerador, menos el numerador multiplicado por la derivada del denominador, todo dividido entre el denominador al cuadrado.
+
+- **f(x) = f(x) / g(x)** → **f'(x) = [f'(x) * g(x) - f(x) * g'(x)] / (g(x))^2**
+
+Ejemplo:
+
+- Si **f(x) = x / (x + 1)**, entonces **f'(x) = [(1) * (x + 1) - x * (1)] / (x + 1)^2 = (x + 1 - x) / (x + 1)^2 = 1 / (x + 1)^2**.
+
+---
+
+## 6. Derivadas de funciones trigonométricas
+
+Las derivadas de las funciones trigonométricas más comunes son:
+
+- **f(x) = sin(x)** → **f'(x) = cos(x)**
+- **f(x) = cos(x)** → **f'(x) = -sin(x)**
+- **f(x) = tan(x)** → **f'(x) = sec^2(x)**
+
+---
+
+## 7. Derivadas de funciones compuestas (Regla de la cadena)
+
+Si tenemos una función compuesta, **f(g(x))**, la derivada se calcula utilizando la **regla de la cadena**. Esta regla dice que la derivada de una función compuesta es igual a la derivada de la función exterior evaluada en la función interior, multiplicada por la derivada de la función interior.
+
+- **f(x) = f(g(x))** → **f'(x) = f'(g(x)) * g'(x)**
+
+Ejemplo:
+
+- Si **f(x) = sin(x^2)**, entonces la derivada es **f'(x) = cos(x^2) * 2x**.
+
+---
+
+## 8. Ejercicios prácticos
+
+### Ejercicio 1: Derivada de una función cuadrática
+
+Calcula la derivada de **f(x) = x^2 + 3x - 4**.
+
+### Ejercicio 2: Derivada de una función multiplicativa
+
+Calcula la derivada de **f(x) = (x + 1)(x - 2)**.
+
+### Ejercicio 3: Derivada de una función trigonométrica
+
+Calcula la derivada de **f(x) = sin(x) + cos(x)**.
+
+---
+
+## 9. Respuestas
+
+### Respuesta al ejercicio 1:
+
+Para la función **f(x) = x^2 + 3x - 4**, la derivada es:
+
+- **f'(x) = 2x + 3**
+
+### Respuesta al ejercicio 2:
+
+Para la función **f(x) = (x + 1)(x - 2)**, aplicamos la regla del producto:
+
+- **f'(x) = (1)(x - 2) + (x + 1)(1) = x - 2 + x + 1 = 2x - 1**
+
+### Respuesta al ejercicio 3:
+
+Para la función **f(x) = sin(x) + cos(x)**, la derivada es:
+
+- **f'(x) = cos(x) - sin(x)**
+
+---
+
+## Conclusión
+
+El cálculo de derivadas es esencial para entender cómo cambian las funciones. Existen diferentes reglas que nos permiten calcular las derivadas de funciones de manera sistemática y efectiva, como la regla del producto, la del cociente, y la regla de la cadena. Practicar con estos métodos es clave para desarrollar una comprensión más profunda del cálculo diferencial.

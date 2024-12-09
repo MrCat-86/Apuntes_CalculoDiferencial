@@ -1,0 +1,163 @@
+---
+title: 'Definición de derivada como límite de un cociente diferencial'
+description: 'Explicación de la derivada como límite de un cociente diferencial utilizando la regla de los cuatro pasos.'
+pubDate: '11-08-2024'
+tags: 'Derivada, Cálculo, Límite, Cociente Diferencial'
+heroImage: '/placeholder/Unidad3.png'
+---
+
+## Introducción
+
+La derivada de una función en un punto específico se puede entender como el límite de un cociente diferencial. En otras palabras, la derivada nos mide el cambio instantáneo de la función en un punto determinado. En este subtema, vamos a explicar cómo calcular la derivada utilizando la **regla de los cuatro pasos**, un proceso que nos ayudará a aplicar la definición de derivada de manera sistemática.
+
+---
+
+## 1. ¿Qué es el cociente diferencial?
+
+El **cociente diferencial** es una expresión que compara el cambio en los valores de la función con el cambio en la variable independiente. Se escribe como:
+
+- **Cociente Diferencial = (f(x + h) - f(x)) / h**
+
+Donde:
+
+- **f(x)** es el valor de la función en el punto **x**.
+- **h** es el cambio en la variable **x**, es decir, una pequeña diferencia entre **x** y un valor cercano.
+
+Este cociente nos da una aproximación de cómo cambia la función cuando cambiamos ligeramente el valor de **x**.
+
+---
+
+## 2. La regla de los cuatro pasos
+
+Para encontrar la derivada de una función en un punto **x**, utilizamos la **regla de los cuatro pasos**, que se basa en la definición de derivada como límite de un cociente diferencial. Los pasos son los siguientes:
+
+### Paso 1: Escribe el cociente diferencial
+
+Escribimos el cociente diferencial, que es la diferencia entre los valores de la función en dos puntos dividida por el cambio en **x**. Esto se representa como:
+
+- **(f(x + h) - f(x)) / h**
+
+### Paso 2: Sustituye la expresión de la función
+
+Sustituyes la expresión de la función en **f(x + h)** y **f(x)** en el cociente diferencial. Esto es necesario para que puedas trabajar con los valores concretos de la función.
+
+### Paso 3: Simplifica la expresión
+
+Simplificas la expresión obtenida en el paso anterior para eliminar términos que se puedan cancelar. Si es necesario, puedes factorizar o reordenar la ecuación para hacerla más sencilla.
+
+### Paso 4: Aplica el límite cuando **h** tiende a 0
+
+Una vez que hayas simplificado la expresión, calculas el **límite** cuando **h** tiende a **0**. Este paso es el más importante, ya que al hacer **h** infinitamente pequeño, obtenemos la derivada en el punto **x**.
+
+El resultado es la derivada de la función en ese punto específico.
+
+---
+
+## 3. Ejemplo de derivada usando la regla de los cuatro pasos
+
+Veamos un ejemplo para calcular la derivada de la función **f(x) = x²** en el punto **x = 2**.
+
+### Paso 1: Escribir el cociente diferencial
+
+La expresión del cociente diferencial para la función **f(x) = x²** es:
+
+- **(f(x + h) - f(x)) / h**
+
+Sustituyendo la función **f(x) = x²**:
+
+- **( (x + h)² - x² ) / h**
+
+### Paso 2: Sustituir la expresión de la función
+
+Ahora, sustituimos **(x + h)²** y **x²**:
+
+- **( (x² + 2xh + h²) - x² ) / h**
+
+### Paso 3: Simplificar la expresión
+
+Simplificamos la expresión eliminando **x²**:
+
+- **(2xh + h²) / h**
+
+Ahora, podemos factorizar **h**:
+
+- **h(2x + h) / h**
+
+Eliminamos **h** en el numerador y denominador:
+
+- **2x + h**
+
+### Paso 4: Aplicar el límite cuando **h** tiende a 0
+
+Finalmente, aplicamos el límite cuando **h** tiende a **0**:
+
+- **lim(h→0) (2x + h) = 2x**
+
+Entonces, la derivada de la función **f(x) = x²** en cualquier punto **x** es **f'(x) = 2x**.
+
+---
+
+## 4. Resumen
+
+La derivada de una función en un punto se puede encontrar utilizando la **definición de derivada como límite de un cociente diferencial**. Siguiendo los cuatro pasos:
+
+1. Escribe el cociente diferencial.
+2. Sustituye la expresión de la función.
+3. Simplifica la expresión.
+4. Aplica el límite cuando **h** tiende a 0.
+
+Este proceso nos permite calcular la derivada de una función de manera precisa y sistemática.
+
+---
+
+## 5. Ejercicios prácticos
+
+### Ejercicio 1: Derivada de una función lineal
+
+Calcula la derivada de la función **f(x) = 5x + 3** en el punto **x = 1** utilizando la regla de los cuatro pasos.
+
+### Ejercicio 2: Derivada de una función cuadrática
+
+Calcula la derivada de la función **f(x) = x² - 4x** en el punto **x = 2** utilizando la regla de los cuatro pasos.
+
+---
+
+## 6. Respuestas
+
+### Respuesta al ejercicio 1:
+
+Para la función **f(x) = 5x + 3**, el cociente diferencial es:
+
+- **(f(x + h) - f(x)) / h = ((5(x + h) + 3) - (5x + 3)) / h**
+
+Simplificando:
+
+- **= (5x + 5h + 3 - 5x - 3) / h = (5h) / h = 5**
+
+Por lo tanto, la derivada de **f(x) = 5x + 3** en **x = 1** es **f'(x) = 5**.
+
+### Respuesta al ejercicio 2:
+
+Para la función **f(x) = x² - 4x**, el cociente diferencial es:
+
+- **(f(x + h) - f(x)) / h = ((x + h)² - 4(x + h) - (x² - 4x)) / h**
+
+Simplificando:
+
+- **= (x² + 2xh + h² - 4x - 4h - x² + 4x) / h = (2xh + h² - 4h) / h**
+
+Factorizamos:
+
+- **h(2x + h - 4) / h = 2x + h - 4**
+
+Aplicando el límite cuando **h → 0**:
+
+- **lim(h→0) (2x + h - 4) = 2x - 4**
+
+Por lo tanto, la derivada de **f(x) = x² - 4x** en **x = 2** es **f'(x) = 2x - 4**.
+
+---
+
+## Conclusión
+
+El cálculo de la derivada utilizando la regla de los cuatro pasos nos permite entender de manera clara y sistemática cómo calcular la tasa de cambio instantánea de una función. Este método es fundamental para comprender el concepto de derivada en el cálculo.
