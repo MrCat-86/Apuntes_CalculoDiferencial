@@ -1,0 +1,129 @@
+---
+title: 'Funciones Algebraicas: Polinomiales y Racionales'
+description: 'Exploración básica de funciones polinomiales y racionales, sus definiciones y ejemplos.'
+pubDate: '12-08-2024'
+tags: 'Cálculo Diferencial, Funciones Algebraicas, Polinomiales, Racionales'
+heroImage: '/placeholder/Unidad1.png'
+---
+
+## Introducción
+
+Las **funciones algebraicas** son aquellas que se definen mediante expresiones algebraicas. Es decir, son funciones que combinan operaciones como suma, resta, multiplicación, división y potenciación con exponentes enteros no negativos.
+
+En esta sección, vamos a centrarnos en dos tipos básicos de funciones algebraicas: **funciones polinomiales** y **funciones racionales**.
+
+---
+
+## 1. Funciones Polinomiales
+
+Una **función polinómica** es aquella que se define por un polinomio, es decir, una suma de potencias de la variable independiente con coeficientes constantes.
+
+### Definición:
+
+Una función polinómica de grado **n** se escribe de la siguiente manera:
+
+```
+f(x) = a_n * x^n + a_{n-1} * x^(n-1) + ... + a_1 * x + a_0
+```
+
+Donde:
+- `a_n, a_{n-1}, ... a_1, a_0` son números constantes llamados coeficientes.
+- `x` es la variable independiente.
+- `n` es el grado del polinomio (un número entero no negativo).
+
+### Ejemplo:
+
+Consideremos el siguiente polinomio:
+
+```
+f(x) = 3 * x^3 - 5 * x^2 + 2 * x - 1
+```
+
+Este es un polinomio de **grado 3**. Los coeficientes son:
+- `a_3 = 3`
+- `a_2 = -5`
+- `a_1 = 2`
+- `a_0 = -1`
+
+### Propiedades:
+
+1. **Dominio**: El dominio de una función polinómica es siempre el conjunto de todos los números reales, denotado como `R`.
+2. **Continuidad**: Las funciones polinomiales son continuas y tienen derivadas de todos los órdenes.
+3. **Comportamiento**: El comportamiento de la función polinómica cuando `x` se hace muy grande o muy pequeño depende del grado del polinomio.
+
+---
+
+## 2. Funciones Racionales
+
+Una **función racional** es el cociente de dos polinomios, es decir, es una fracción en la que el numerador y el denominador son polinomios.
+
+### Definición:
+
+Una función racional se escribe como:
+
+```
+f(x) = P(x) / Q(x)
+```
+
+Donde:
+- `P(x)` y `Q(x)` son polinomios.
+- `Q(x) ≠ 0`, ya que la división por cero no está permitida.
+
+### Ejemplo:
+
+Consideremos la siguiente función racional:
+
+```
+f(x) = (x^2 - 4) / (x^2 - 1)
+```
+
+### Análisis:
+
+1. **Dominio**: El dominio de esta función se obtiene excluyendo los valores de `x` que hacen que el denominador sea cero.  
+   ```
+   x^2 - 1 = 0  =>  x = ± 1
+   ```  
+   Por lo tanto, el dominio de la función es:  
+   `D = R \ {1, -1}`.
+
+2. **Simplificación**: Se puede simplificar la función factorizando el numerador y el denominador:
+   ```
+   f(x) = ((x-2)(x+2)) / ((x-1)(x+1))
+   ```
+
+### Propiedades:
+
+1. **Dominio**: El dominio de una función racional es el conjunto de todos los números reales, excepto aquellos que hacen que el denominador sea cero.
+2. **Asintotas**: Las funciones racionales pueden tener **asintotas verticales** donde el denominador es cero, y **asintotas horizontales** dependiendo de los grados de los polinomios.
+
+---
+
+## Ejemplo práctico
+
+**Problema:**  
+Encuentra el dominio de la siguiente función racional:
+
+```
+f(x) = (3 * x^2 - 5 * x + 2) / (x^2 - 4)
+```
+
+**Resolución:**
+
+1. **Dominio:**
+   La función no está definida cuando el denominador es cero, es decir, cuando:
+
+   ```
+   x^2 - 4 = 0  =>  x = ± 2
+   ```
+
+   Por lo tanto, el dominio de la función es:
+
+   ```
+   D = R \ {2, -2}
+   ```
+
+---
+
+## Conclusión
+
+Las **funciones algebraicas**, tanto polinomiales como racionales, son fundamentales en el cálculo. Las funciones polinomiales son fáciles de entender y manejar, mientras que las funciones racionales son más complejas, pero nos permiten modelar una mayor variedad de situaciones matemáticas. Ambas son herramientas esenciales para resolver problemas en cálculo y otras ramas de las matemáticas.
